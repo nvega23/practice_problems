@@ -26,7 +26,7 @@ def first_ten():
         tots += x
         res = (tots ** 2)
         all = (res)
-    print(all - sums)
+    print(f'{all:,}')
 
 
 if __name__ == '__main__':
