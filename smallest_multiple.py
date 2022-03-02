@@ -4,17 +4,17 @@
 
 
 def smallest_number(num1):
-	for x in range(1,21):
+	for x in range(2,21):
 		if num1 % x != 0:
 			return False
 	return True
 
 
 
-number = 1
+number = 20
 while True:
 	if smallest_number(number):
 		break
-	number += 1
+	number += 20
 
-print(number)
+print(f'{number:,}')
