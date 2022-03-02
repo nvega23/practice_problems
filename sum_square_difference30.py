@@ -5,7 +5,7 @@
 # (1+2+3...+10)²=55²= 3025
 
 # Hence the difference between the sum of the squares of the first ten natural
-# numbers and the square of the sum is 
+# numbers and the square of the sum is
 # 3025 - 385 = 2640.
 
 # Find the difference between the sum of the squares of the first one hundred
@@ -32,18 +32,7 @@ def first_ten():
 
     return result
 
-<<<<<<< HEAD
 
 if __name__ == '__main__':
     result = first_ten()
     print(result)
-=======
-        all = (res - sums)
-    return all
-
-if __name__ == '__main__':
-    all = first_ten()
-    print(all)
-
-    
->>>>>>> 555901b (placed a return call in main)
