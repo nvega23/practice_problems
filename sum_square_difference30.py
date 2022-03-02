@@ -28,9 +28,14 @@ def first_ten():
     for x in range(101):
         tots += x
         res = (tots ** 2)
+<<<<<<< HEAD
         result = (res - sums)
 
     return result
+=======
+        all = (res)
+    print(f'{all:,}')
+>>>>>>> 00b24bf (tab size to 4,space after comma,included if name,fixed spacing)
 
 
 if __name__ == '__main__':
