@@ -8,28 +8,25 @@
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum
 
 
-
 def first_ten():
     first = 0
     tots = 0
     res = 0
+
+    # the first for loop will gather the 1² + 2² + 3²...+ 10² = 385 or wichever number is wanted 
+
     for x in range(101):
         first += x ** 2
         sums = (first)
 
 
-        # the first for loop will gather the 1² + 2² + 3²...+ 10² = 385 or wichever number is wanted 
-
+    # this second for loop will gather the (1+2+3...+10)²=55²= 3025 or any other number and subtract from the two loops 
 
     for x in range(101):
         tots += x
         res = (tots ** 2)
         all = (res)
     print(all - sums)
-
-
-        # this second for loop will gather the (1+2+3...+10)²=55²= 3025 or any other number and subtract from the two loops 
-
 
 
 if __name__ == '__main__':
