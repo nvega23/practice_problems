@@ -32,7 +32,18 @@ def first_ten():
 
     return result
 
+<<<<<<< HEAD
 
 if __name__ == '__main__':
     result = first_ten()
     print(result)
+=======
+        all = (res - sums)
+    return all
+
+if __name__ == '__main__':
+    all = first_ten()
+print(f'{all:,}')
+
+    
+>>>>>>> 555901b (placed a return call in main)
