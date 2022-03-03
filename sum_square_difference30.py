@@ -26,10 +26,10 @@ def first_ten():
         res = (tots ** 2)
 
         all = (res - sums)
-    print(all)
+    return all
 
 if __name__ == '__main__':
-    first_ten() 
-
+    all = first_ten()
+print(f'{all:,}')
 
     
