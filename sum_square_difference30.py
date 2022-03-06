@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
 if __name__ == '__main__':
     all = first_ten()
-print(f'{all:,}')
+    print(all)
 
     
 >>>>>>> 555901b (placed a return call in main)
