@@ -30,6 +30,6 @@ def first_ten():
 
 if __name__ == '__main__':
     all = first_ten()
-print(f'{all:,}')
+    print(all)
 
     
