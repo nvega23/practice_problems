@@ -34,4 +34,4 @@ def first_ten():
 
 if __name__ == '__main__':
     result = first_ten()
-    print(result)    
+    print(result)
