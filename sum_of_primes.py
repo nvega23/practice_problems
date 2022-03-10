@@ -5,7 +5,7 @@ def sum():
     for x in range(2, 10):
         for y in range(2, x):
             if y % x == 0:
-                print(y)
+                return y 
     result = (x + y)
 
     return result
