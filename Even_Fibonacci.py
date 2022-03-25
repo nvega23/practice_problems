@@ -6,27 +6,16 @@
 # By considering the terms in the Fibonacci sequence whose values do not 
 # exceed four million, find the sum of the even-valued terms.
 
-def fib(n):
-    if n == 0:
-        return 1
-    elif n == 1:
-        return 2
-    else:
-        return fib(n - 1) + fib(n - 2)
-    tot = 0
-    n = 0
-    while fib(n) <= n:
-        if fib(n) % 2 != 0:
-            tot += fib(n)
-        n += 1
-    return tot
+def fib(num1):
+    for x in range(num1):
+        if num1 == 0:
+            return 1
+        if num1 == 1:
+            return 2
+        else:
+            return fib(num1 - 1) + fib(num1 - 2) 
 
 
 if __name__ == "__main__":
-    tot = fib(5)
-    print(tot)
-    assert fib(5) == 13
-    assert fib(9) == 89
-    assert fib(13) == 610
-    assert fib(21) == 28657
-    assert fib(4000000) == 4613731
+    num1 = fib(1)
+    print(num1)
