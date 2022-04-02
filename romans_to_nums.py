@@ -13,36 +13,23 @@ def romanToInt(input_string: str) -> int:
     output = 0
     for char in input_string:
         value = roman[char]
-
         if input_string >= "IV":
             output = value - output
-
         elif input_string == "IX":
             output = value - output
-
         elif input_string == "XL":
             output = value - output
-
         elif input_string == "XC":
             output = value - output
-
-        elif input_string == "CD":
+        elif input_string == "CD": 
             output = value - output
-            continue
-        elif input_string == "CM":
+        elif input_string == "CM": 
             output = value - output
-
         else:
-            for char in input_string:
-                value = roman[char]
-                output += value
-            return output
+            output += value
     return output
 
 
 if __name__ == "__main__":
-    assert romanToInt("IV") == 4
-    assert romanToInt("CD") == 400
-    assert romanToInt("MCD") == 1400
-    assert romanToInt("MCMXCIV") == 1994
-    print("test passed!")
+    output = romanToInt("MCMXCVI")
+    print(output)
