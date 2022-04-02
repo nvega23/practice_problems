@@ -3,19 +3,29 @@
 
         # 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 
-# By considering the terms in the Fibonacci sequence whose values do not 
+# By considering the terms in the Fibonacci sequence whose values do not
 # exceed four million, find the sum of the even-valued terms.
 
-def fib(num1):
-    for x in range(num1):
-        if num1 == 0:
-            return 1
-        if num1 == 1:
-            return 2
-        else:
-            return fib(num1 - 1) + fib(num1 - 2) 
+def fib(n):
+    if n == 0:
+        return 1
+    if n == 1:
+        return 2
+    else:
+        return fib(n - 1) + fib(n - 2)
 
+
+def even_sums(n):
+    output = 0
+    for x in range(n):
+        if x % 2 != 0:
+            output += fib(n)
+        elif x % 2 == 0:
+            output += fib(n)
+        return output
 
 if __name__ == "__main__":
-    num1 = fib(1)
-    print(num1)
+    assert even_sums(10) == 144
+    assert even_sums(16) == 2584
+    assert even_sums(30) == 2178309
+    print("Test passed!")
