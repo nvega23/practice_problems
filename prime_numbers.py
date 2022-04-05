@@ -25,6 +25,7 @@ def prime_number(div):
 
 
 if __name__ == '__main__':
+    print("running tests for prime numbers")
     assert prime_number(1) == 2
     assert prime_number(6) == 13
     assert prime_number(11) == 31
