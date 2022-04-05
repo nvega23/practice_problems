@@ -25,6 +25,7 @@ def even_sums(n):
         return output
 
 if __name__ == "__main__":
+    print("running even fibonacci tests")
     assert even_sums(10) == 144
     assert even_sums(16) == 2584
     assert even_sums(30) == 2178309
