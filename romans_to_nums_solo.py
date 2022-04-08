@@ -27,11 +27,11 @@ def romanToInt(input_string: str) -> int:
 		output += value
 		if last_character:
 			if last_character == "I" and char in ["V", "X"]:
-				output -= 2 
+				output -= 2 * romans["I"]
 			if last_character == "X" and char in ["L", "C"]:
-				output -= 20 
+				output -= 2 * romans["X"]
 			if last_character == "C" and char in ["D", "M"]:
-				output -= 200 
+				output -= 2 * romans["C"]
 		last_character = char
 
 	return output
