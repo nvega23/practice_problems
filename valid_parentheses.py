@@ -1,11 +1,13 @@
-""" Given a string s containing just the characters
+"""
+Given a string s containing just the characters
 '(', ')', '{', '}', '['and ']',
 determine if the input string is valid.
 
 An input string is valid if:
 
 Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order. """
+Open brackets must be closed in the correct order.
+"""
 
 
 def isValid(strings: str) -> bool:
@@ -15,14 +17,14 @@ def isValid(strings: str) -> bool:
         "]": "[",
         "}": "{"
     }
-    for symbols in strings:
-        if symbols in braces:
-            if output and output[-1] == braces[symbols]:
+    for char in strings:
+        if char in braces:
+            if output and output[-1] == braces[char]:
                 output.pop()
             else:
                 return False
         else:
-            output.append(symbols)
+            output.append(char)
 
     return True if not output else False
 
@@ -35,4 +37,5 @@ if __name__ == "__main__":
     assert isValid("([])") == True
     assert isValid(")(") == False
     assert isValid("[)") == False
+    assert isValid("((){})[]") == True
     print("Test passed!")
