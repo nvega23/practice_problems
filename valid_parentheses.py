@@ -10,7 +10,7 @@ Open brackets must be closed in the correct order.
 """
 
 
-def isValid(strings: str) -> bool:
+def is_valid(strings: str) -> bool:
     output = []
     braces = {
         ")": "(",
@@ -26,16 +26,16 @@ def isValid(strings: str) -> bool:
         else:
             output.append(char)
 
-    return True if not output else False
+    return not output
 
 
 if __name__ == "__main__":
     print("running tests for valid parentheses")
-    assert isValid("[") == False
-    assert isValid("(") == False
-    assert isValid("()") == True
-    assert isValid("([])") == True
-    assert isValid(")(") == False
-    assert isValid("[)") == False
-    assert isValid("((){})[]") == True
+    assert is_valid("[") == False
+    assert is_valid("(") == False
+    assert is_valid("()") == True
+    assert is_valid("([])") == True
+    assert is_valid(")(") == False
+    assert is_valid("[)") == False
+    assert is_valid("((){})[]") == True
     print("Test passed!")
