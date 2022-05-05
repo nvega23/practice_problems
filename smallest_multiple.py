@@ -8,7 +8,7 @@
 
 
 def smallest_number(num1):
-    for x in range(1, 11):
+    for x in range(1, num1):
         if num1 % x != 0:
             return False
     return True
@@ -21,5 +21,6 @@ while True:
 
 if __name__ == '__main__':
     print("running smallest multiple")
+    # assert smallest_number(2520) == (11)
     print(f'{n:,}')
     print("test passed!")
