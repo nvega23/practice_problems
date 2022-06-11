@@ -20,6 +20,7 @@ def sum(num1):
     return result
 
 if __name__ == "__main__":
+    print("running sum of primes tests...")
     assert sum(5) == 10
     assert sum(17) == 58
     assert sum(224) == 4661
